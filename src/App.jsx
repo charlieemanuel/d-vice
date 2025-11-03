@@ -19,15 +19,15 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/new-arrival" element={<Arrivals />} />
-        <Route path="/shop/:shopId" element={<Shop />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/wishlist" element={<Wishlist />} />
-        <Route path="/cart" element={<Cart />} />
-        <Route path="/user" element={<User />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/orders" element={<Orders />} />
-        <Route path="/place-order" element={<PlaceOrder />} />
+        <Route path="/d-vice/new-arrival" element={<Arrivals />} />
+        <Route path="/d-vice/shop/:shopId" element={<Shop />} />
+        <Route path="/d-vice/about" element={<About />} />
+        <Route path="/d-vice/wishlist" element={<Wishlist />} />
+        <Route path="/d-vice/cart" element={<Cart />} />
+        <Route path="/d-vice/user" element={<User />} />
+        <Route path="/d-vice/login" element={<Login />} />
+        <Route path="/d-vice/orders" element={<Orders />} />
+        <Route path="/d-vice/place-order" element={<PlaceOrder />} />
       </Routes>
     </main>
   )
