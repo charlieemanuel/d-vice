@@ -1,1 +1,41 @@
 @import "tailwindcss";
+
+body {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+/* Logo 32px */
+h1 {
+    font-family: "Italianno", cursive;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/*  headings: 28px, bold
+    page title: 20px, bold
+*/
+h2, h3 {
+    font-family: "Aref Ruqaa Ink", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/*  title: 18px, medium
+    total amount: 20px, semibold
+    menus: 18px, medium
+    price: 18px, semibold
+    body: 16px, regular
+    button: 16px, semibold*/
+button, a, p, input, span {
+    font-family: "Advent Pro", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+a.active p {
+    font-weight: bold;
+}
