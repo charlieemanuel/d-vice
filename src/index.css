@@ -36,6 +36,6 @@ button, a, p, input, span {
     font-variation-settings: "wdth" 100;
 }
 
-a.active {
+a.active, p.active:first-child {
     font-weight: bold;
 }
