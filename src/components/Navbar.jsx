@@ -12,7 +12,7 @@ const Navbar = () => {
       <header className='flex items-center justify-between py-5 bg-[#EDE8D0] px-4 md:px-[4vw] h-[80px]'>
 
         {/* Logo */}
-        <NavLink to='/'>
+        <NavLink to='/d-vice'>
           <h1 className='mt-2 text-3xl md:text-4xl'>
             D-Vice
           </h1>
@@ -20,7 +20,7 @@ const Navbar = () => {
 
         {/* Menus */}
         <ul className="hidden md:flex gap-10 text-lg font-medium text-gray-700">
-          <NavLink to="/" className='flex flex-col items-center gap-1 leading-[1]'>
+          <NavLink to="/d-vice/" className='flex flex-col items-center gap-1 leading-[1]'>
             <p className='hover:text-black/50 transition-all duration-300'>Home</p>
           </NavLink>
           <NavLink to="/d-vice/new-arrival" className='flex flex-col items-center gap-1 leading-[1]'>
