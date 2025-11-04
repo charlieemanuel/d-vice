@@ -66,7 +66,7 @@ const Hero = () => {
           </div>
 
           {/* Cards Items */}
-          <div className='grid grid-cols-2 md:grid-cols-4 py-5 gap-16 md:gap-48'>
+          <div className='grid grid-cols-2 lg:grid-cols-4 py-5 gap-16 md:gap-x-60 lg:gap-30 xl:gap-50'>
             <div className='max-md:w-[130px] md:w-[150px] h-[200px] border border-gray-400 flex flex-col items-center justify-center rounded-lg overflow-hidden hover:scale-[1.02] transition-all duration-300'>
               <div className='w-full h-3/4 category-one'></div>
               <a href='' className='w-full h-3/12 flex items-center justify-center text-lg underline underline-offset-2 hover:text-black/50 transition-all duration-300'>Mobiles and Tablets</a>
