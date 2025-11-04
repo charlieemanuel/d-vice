@@ -69,22 +69,22 @@ const Hero = () => {
           <div className='grid grid-cols-2 lg:grid-cols-4 py-5 gap-16 md:gap-x-60 lg:gap-30 xl:gap-50'>
             <div className='max-md:w-[130px] md:w-[150px] h-[200px] border border-gray-400 flex flex-col items-center justify-center rounded-lg overflow-hidden hover:scale-[1.02] transition-all duration-300'>
               <div className='w-full h-3/4 category-one'></div>
-              <a href='' className='w-full h-3/12 flex items-center justify-center text-lg underline underline-offset-2 hover:text-black/50 transition-all duration-300'>Mobiles and Tablets</a>
+              <a href='' className='w-full h-3/12 flex items-center justify-center text-center text-base underline underline-offset-2 hover:text-black/50 transition-all duration-300 px-1'>Mobiles and Tablets</a>
             </div>
 
             <div className='max-md:w-[130px] md:w-[150px] h-[200px] border border-gray-400 flex flex-col items-center justify-center rounded-lg overflow-hidden hover:scale-[1.02] transition-all duration-300'>
               <div className='w-full h-3/4 category-two'></div>
-              <a href='' className='w-full h-3/12 flex items-center justify-center text-lg underline underline-offset-2 hover:text-black/50 transition-all duration-300'>Mobiles and Tablets</a>
+              <a href='' className='w-full h-3/12 flex items-center justify-center text-center text-base underline underline-offset-2 hover:text-black/50 transition-all duration-300 px-1'>Audio Devices</a>
             </div>
 
             <div className='max-md:w-[130px] md:w-[150px] h-[200px] border border-gray-400 flex flex-col items-center justify-center rounded-lg overflow-hidden hover:scale-[1.02] transition-all duration-300'>
               <div className='w-full h-3/4 category-three'></div>
-              <a href='' className='w-full h-3/12 flex items-center justify-center text-lg underline underline-offset-2 hover:text-black/50 transition-all duration-300'>Mobiles and Tablets</a>
+              <a href='' className='w-full h-3/12 flex items-center justify-center text-center text-base underline underline-offset-2 hover:text-black/50 transition-all duration-300 px-1'>Desktops and Laptops</a>
             </div>
 
             <div className='max-md:w-[130px] md:w-[150px] h-[200px] border border-gray-400 flex flex-col items-center justify-center rounded-lg overflow-hidden hover:scale-[1.02] transition-all duration-300'>
               <div className='w-full h-3/4 category-four'></div>
-              <a href='' className='w-full h-3/12 flex items-center justify-center text-lg underline underline-offset-2 hover:text-black/50 transition-all duration-300'>Mobiles and Tablets</a>
+              <a href='' className='w-full h-3/12 flex items-center justify-center text-center text-base underline underline-offset-2 hover:text-black/50 transition-all duration-300 px-1'>Smart Home Devices</a>
             </div>
           </div>
         </div>
