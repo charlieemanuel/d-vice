@@ -59,7 +59,7 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu */}
-      <div className={`absolute top-0 right-0 overflow-hidden bg-[#EDE8D0] transition-all ${toggle ? 'w-full h-full' : 'w-0 h-0'}`}>
+      <div className={`absolute top-0 right-0 overflow-hidden bg-[#EDE8D0] transition-all ${toggle ? 'w-full h-full z-10' : 'w-0 h-0'}`}>
         <div className='flex flex-col text-gray-700'>
           <div onClick={() => setToggle(false)} className='flex items-center p-3'>
             <button>
