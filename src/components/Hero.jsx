@@ -10,6 +10,17 @@ const Hero = () => {
   return (
       <section>
 
+        {/* Banner Small Screen */}
+        <div className='md:hidden relative w-full max-md:max-h[200px] md:h-[200px] rounded-lg banner overflow-hidden hover:scale-[1.01] transition-all duration-300'>
+          <img src={heroBanner} alt='banner' className='object-bottom w-full' ></img>
+          <div className='absolute bottom-3 right-3 space-y-3 text-right'>
+            <h2 className='text-lg sm:text-2xl text-white text-shadow-lg text-shadow-black'>Big Tech. Bigger Savings.</h2>
+            <h3 className='text-md sm:text-lg text-white text-shadow-lg text-shadow-black'>
+              Get up to 35% off on selected devices this week only.
+            </h3>
+          </div>
+        </div>
+
         {/* Text, CTA, Carousel */}
         <div className='flex flex-col md:flex-row items-center md:justify-between max-md:gap-6 md:space-x-2'>
           <div className='flex flex-col items-center md:items-start justify-between h-full gap-5'>
@@ -28,13 +39,13 @@ const Hero = () => {
           </div>
 
           {/* Carousel Images */}
-          <div className='h-full'>
+          <div className='h-full hover:scale-[1.02] transition-all duration-300'>
             <img src={carouselOne} alt='image 1' width={380} className='rounded-lg'></img>
           </div>
         </div>
 
-        {/* Banner */}
-        <div className='relative w-full max-md:max-h[200px] md:h-[200px] rounded-lg my-5 banner overflow-hidden'>
+        {/* Banner Medium Screen */}
+        <div className='max-md:hidden relative w-full max-md:max-h[200px] md:h-[200px] rounded-lg my-5 banner overflow-hidden hover:scale-[1.01] transition-all duration-300'>
           <img src={heroBanner} alt='banner' className='object-bottom w-full' ></img>
           <div className='absolute bottom-3 right-3 space-y-3 text-right'>
             <h2 className='text-2xl md:text-3xl text-white text-shadow-lg text-shadow-black'>Big Tech. Bigger Savings.</h2>
@@ -45,40 +56,35 @@ const Hero = () => {
         </div>
 
         {/* Cards */}
-        <div className='flex flex-col items-center justify-center'>
+        <div className='flex flex-col items-center justify-center my-5'>
 
           {/* Cards Title */}
           <div className='flex items-center justify-evenly w-full'>
-            <p className='h-[1.5px] w-full bg-black mt-2'></p>
+            <p className='max-md:hidden h-[1.5px] w-full bg-black mt-2'></p>
             <h3 className='text-xl w-full flex items-center justify-center'>Explore By Categories</h3>
-            <p className='h-[1.5px] w-full bg-black mt-2'></p>
+            <p className='max-md:hidden h-[1.5px] w-full bg-black mt-2'></p>
           </div>
 
-          {/* Cards Item */}
-          <div className='grid grid-cols-2 md:grid-cols-4 py-5 gap-16 md:gap-60'>
-            <div className='w-[120px] h-[200px] rounded-lg overflow-hidden'>
-              <div>
-                <img src={categoryOne} alt='image 1'></img>
-              </div>
-              <p className='text-center underline'>Mobiles and Tablet</p>
+          {/* Cards Items */}
+          <div className='grid grid-cols-2 md:grid-cols-4 py-5 gap-16 md:gap-48'>
+            <div className='max-md:w-[130px] md:w-[150px] h-[200px] border border-gray-400 flex flex-col items-center justify-center rounded-lg overflow-hidden hover:scale-[1.02] transition-all duration-300'>
+              <div className='w-full h-3/4 category-one'></div>
+              <a href='' className='w-full h-3/12 flex items-center justify-center text-lg underline underline-offset-2 hover:text-black/50 transition-all duration-300'>Mobiles and Tablets</a>
             </div>
-            <div className='h-[200px] rounded-lg overflow-hidden'>
-              <div>
-                <img src={categoryTwo} alt='image 1'></img>
-              </div>
-              <p className='text-center underline'>Audio Devices</p>
+
+            <div className='max-md:w-[130px] md:w-[150px] h-[200px] border border-gray-400 flex flex-col items-center justify-center rounded-lg overflow-hidden hover:scale-[1.02] transition-all duration-300'>
+              <div className='w-full h-3/4 category-two'></div>
+              <a href='' className='w-full h-3/12 flex items-center justify-center text-lg underline underline-offset-2 hover:text-black/50 transition-all duration-300'>Mobiles and Tablets</a>
             </div>
-            <div className='h-[200px] rounded-lg'>
-              <div>
-                <img src={categoryThree} alt='image 1'></img>
-              </div>
-              <p className='text-center underline'>Desktops and Laptops</p>
+
+            <div className='max-md:w-[130px] md:w-[150px] h-[200px] border border-gray-400 flex flex-col items-center justify-center rounded-lg overflow-hidden hover:scale-[1.02] transition-all duration-300'>
+              <div className='w-full h-3/4 category-three'></div>
+              <a href='' className='w-full h-3/12 flex items-center justify-center text-lg underline underline-offset-2 hover:text-black/50 transition-all duration-300'>Mobiles and Tablets</a>
             </div>
-            <div className='w-[120px] h-[200px] rounded-lg'>
-              <div className=''>
-                <img src={categoryFour} alt='image 1'></img>
-              </div>
-              <p className='text-center underline'>Smart Home Devices</p>
+
+            <div className='max-md:w-[130px] md:w-[150px] h-[200px] border border-gray-400 flex flex-col items-center justify-center rounded-lg overflow-hidden hover:scale-[1.02] transition-all duration-300'>
+              <div className='w-full h-3/4 category-four'></div>
+              <a href='' className='w-full h-3/12 flex items-center justify-center text-lg underline underline-offset-2 hover:text-black/50 transition-all duration-300'>Mobiles and Tablets</a>
             </div>
           </div>
         </div>

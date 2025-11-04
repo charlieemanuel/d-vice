@@ -40,3 +40,30 @@ a.active, p.active:first-child {
     font-weight: bold;
 }
 
+.category-one {
+    background-image: url(./assets/images/home-category-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.category-two {
+    background-image: url(./assets/images/home-category-2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.category-three {
+    background-image: url(./assets/images/home-category-3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.category-four {
+    background-image: url(./assets/images/home-category-4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
