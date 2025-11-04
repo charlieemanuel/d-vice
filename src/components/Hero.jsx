@@ -22,7 +22,7 @@ const Hero = () => {
         </div>
 
         {/* Text, CTA, Carousel */}
-        <div className='flex flex-col md:flex-row items-center md:justify-between max-md:gap-6 md:space-x-2'>
+        <div className='flex flex-col md:flex-row items-center md:justify-between max-md:gap-6 md:space-x-2 max-md:my-5'>
           <div className='flex flex-col items-center md:items-start justify-between h-full gap-5'>
             <h2 className='text-2xl md:text-3xl'>Power Up Your World with the Latest Devices</h2>
             <p className='text-base'>
