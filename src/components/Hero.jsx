@@ -1,9 +1,46 @@
-import React from 'react';
-import carouselTwo from '../assets/images/carousel-4.jpg';
+import {useState} from "react";
 import heroBanner from '../assets/images/home-banner-2.jpg';
 import Title from "./Title.jsx";
-
+import carouselOne from '../assets/images/carousel-1.jpg';
+import carouselTwo from '../assets/images/carousel-2.jpg';
+import carouselThree from '../assets/images/carousel-3.jpg';
+import carouselFour from '../assets/images/carousel-4.jpg';
+import { FaCircleChevronLeft, FaCircleChevronRight } from 'react-icons/fa6';
+import { FaCircle } from 'react-icons/fa';
 const Hero = () => {
+  const carouselImages = [
+    {
+      url: carouselOne,
+    },
+    {
+      url: carouselTwo,
+    },
+    {
+      url: carouselThree,
+    },
+    {
+      url: carouselFour,
+    },
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const prevImage = () => {
+    const isFirstImage = currentIndex === 0;
+    const newIndex = isFirstImage ? carouselImages.length -1 : currentIndex - 1;
+    setCurrentIndex(newIndex);
+  };
+
+  const nextImage = () => {
+    const isLastImage = currentIndex === carouselImages.length - 1;
+    const newIndex = isLastImage ? 0 : currentIndex + 1;
+    setCurrentIndex(newIndex);
+  }
+
+  // const goToImage = (imageIndex) => {
+  //   setCurrentIndex(imageIndex);
+  // }
+
   return (
       <section>
 
@@ -36,8 +73,33 @@ const Hero = () => {
           </div>
 
           {/* Carousel Images */}
-          <div className='h-full hover:scale-[1.02] transition-all duration-300'>
-            <img src={carouselTwo} alt='image 1' width={380} className='rounded-sm'></img>
+          <div className='w-[312px] h-[238px] sm:w-[328px] sm:h-[250px] lg:w-[380px] lg:h-[289px] hover:scale-[1.02] transition-all duration-300 relative'>
+            <div
+                style={{backgroundImage: `url(${carouselImages[currentIndex].url})`}}
+                className='w-full h-full rounded-sm bg-center bg-cover duration-500'>
+            </div>
+
+            {/* Left Arrow */}
+            <div className='hover:scale-110 absolute top-[45%] left-5 -translate-x-0 translate-y-[50%] transition-all duration-300 text-2xl rounded-full bg-white text-black/75 cursor-pointer '>
+              <FaCircleChevronLeft onClick={prevImage} />
+            </div>
+
+            {/* Right Arrow */}
+            <div className='hover:scale-110 absolute top-[45%] right-5 -translate-x-0 translate-y-[50%] transition-all duration-300 text-2xl rounded-full bg-white text-black/75 cursor-pointer '>
+              <FaCircleChevronRight onClick={nextImage} />
+            </div>
+
+            {/*/!* Dots button *!/*/}
+            {/*<div className='absolute bottom-3 left-[38%] text-xs text-black/70 space-x-3 flex justify-center'>*/}
+            {/*  {carouselImages.map((carouselImage, imageIndex ) => (*/}
+            {/*      <div*/}
+            {/*          key={imageIndex}*/}
+            {/*          onClick={() => goToImage(imageIndex)}*/}
+            {/*          className='cursor-pointer'>*/}
+            {/*        <FaCircle />*/}
+            {/*      </div>*/}
+            {/*  ))}*/}
+            {/*</div>*/}
           </div>
         </div>
 
